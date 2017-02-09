@@ -1,7 +1,14 @@
 <html ng-app="apiApp">
-	<body>
+	<body ng-controller="mainCTRL">
 		
-				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+		<div ng-repeat="person in chars">
+			<ul>
+				<li>{{person.aliases[0]}}</li>
+				<li>{{person.culture}}</li>
+			</ul>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>
